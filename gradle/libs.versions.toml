@@ -1,0 +1,7 @@
+[versions]
+guava = '32.1.2-jre'
+slf4j = '2.0.13'
+
+[libraries]
+guava-jre = { module = 'com.google.guava:guava', version.ref = 'guava'}
+slf4j-simple = { module = 'org.slf4j:slf4j-simple', version.ref = 'slf4j'}

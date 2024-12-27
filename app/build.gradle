@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(libs.guava.jre) // need to compile and run the app
+    runtimeOnly(libs.slf4j.simple) // only needed at runtime
+
+}
+
+application {
+    mainClass = 'org.demo.MyHobbies'
+}
